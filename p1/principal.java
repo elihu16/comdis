@@ -10,9 +10,5 @@ public class principal {
         elihu.setSeccion(103);
         
         System.out.println(elihu.toString());
-        
-        /*System.out.println("nombre: "+ elihu.GetNombre());
-        System.out.println("Edad: "+ elihu.GetEdad());
-        System.out.println("Genero: " + elihu.GetGenero());*/
     }
 }//fin  de la clase principal
