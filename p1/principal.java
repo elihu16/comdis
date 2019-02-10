@@ -1,6 +1,7 @@
 public class principal {
     public static void main(String[] args) {
         talumno elihu = new talumno();
+        System.out.println("Datos del objeto creado");
         elihu.SetNombre("Elihu Baltazar Diaz");
         elihu.SetEdad(22);
         elihu.SetGenero('m');
