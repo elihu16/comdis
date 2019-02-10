@@ -1,7 +1,7 @@
 public class principal {
     public static void main(String[] args) {
         talumno elihu = new talumno();
-        elihu.SetNombre("elihu Baltazar Diaz");
+        elihu.SetNombre("Elihu Baltazar Diaz");
         elihu.SetEdad(22);
         elihu.SetGenero('m');
         
