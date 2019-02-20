@@ -1,5 +1,5 @@
 public class talumno extends tpersona {
-    //atributos
+    //atributos de la clase heredada
     private String matricula;
     private int cuatrimestre;
     private int seccion;
