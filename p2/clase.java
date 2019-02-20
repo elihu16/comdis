@@ -1,38 +1,22 @@
-public class talumno extends tpersona {
+public class clase{
     //atributos de la clase heredada
-    private String matricula;
-    private int cuatrimestre;
-    private int seccion;
+    private String nombre;
     
     //****************metodos
     //metodo constructor
-    talumno(){
-    super();//mandamos a llamar al constructor del padre
-    matricula="";
-    cuatrimestre = seccion = 0;    
+    clase(){
+    //super();//mandamos a llamar al constructor del padre
+    nombre="";   
     }
     //metodo set
-    public void setMatricula(String matricula){
-        this.matricula=matricula;
-    }
-    public void setCuatrimestre(int cuatrimestre){
-        this.cuatrimestre=cuatrimestre;
-    }
-    public void setSeccion(int seccion){
-        this.seccion=seccion;
+    public void setNombre(String nombre){
+        this.nombre=nombre;
     }
     //metodos get
-    public String getMatricula(){
-        return matricula;
-    }
-    public int getCuatrimestre(){
-        return cuatrimestre;
-    }
-    public int getSeccion(){
-        return seccion;
+    public String getNombre(){
+        return nombre;
     }
     
-    @Override
     public String  toString(){
         String mensaje;
         mensaje = super.toString();
