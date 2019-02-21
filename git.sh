@@ -1,7 +1,7 @@
 #!/bin/sh
 git add .
 echo " "
-echo "***********************************"
+echo "******Computo*Distribuido**********"
 echo "**mensaje de commit(sin espacios)**"
 echo "***********************************"
 echo " "
