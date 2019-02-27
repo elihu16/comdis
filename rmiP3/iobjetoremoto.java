@@ -3,6 +3,10 @@ import java.rmi.Remote;
 
 public interface iobjetoremoto extends Remote{
     //prototipos de los metodos a utilizar remotamente
-    public void Saludo(String mensaje) throws RemoteException;
+    /*public int DevolverNoCliente() throws RemoteException;*/
+
+    public double DevolverSaldo(int ncliente) throws RemoteException;
+
+    public void CambiarSaldo(int ncliente, double saldo) throws RemoteException;
 
 }//fin de la interfaz iobjetoremoto
