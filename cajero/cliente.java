@@ -10,7 +10,7 @@ public class cliente{
             Scanner lectura = new Scanner(System.in);
             Scanner leer = new Scanner(System.in);
             int cliente;
-            double saldo;
+            double saldo,saldodis;
             int opc;
             System.out.println("Cajero Automatico Elihu\n");
             System.out.print("Dame el numero de cliente");
@@ -34,8 +34,15 @@ public class cliente{
                         case 2:
                             System.out.print("Dame la cantidad a retirar: ");
                             saldo = leer.nextDouble();
-                            objrem.CambiarSaldo(cliente, saldo*(-1));
-                            System.out.print("Tu saldo actual es: " + objrem.DevolverSaldo(cliente));
+                            saldodis = objrem.DevolverSaldo(cliente);
+                            if(saldo > saldodis){
+                                System.out.println("Saldo insuficiente");
+                            }
+                            else{
+                                objrem.CambiarSaldo(cliente, saldo*(-1));
+                                System.out.print("Tu saldo actual es: " + objrem.DevolverSaldo(cliente));
+                            
+                            }
                             break;
                         case 3:
                             System.out.print("Dame la cantidad a depositar: ");
