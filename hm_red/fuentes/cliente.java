@@ -5,7 +5,7 @@ public class cliente{
         try{
             System.setProperty("java.security.policy","rmi.policy");
             System.setSecurityManager(new SecurityManager());
-            iobjetoremoto objrem = (iobjetoremoto) Naming.lookup("rmi://localhost:2320/SistemasDistribuidos");
+            iobjetoremoto objrem = (iobjetoremoto) Naming.lookup("rmi://172.31.9.221:2320/SistemasDistribuidos");
             //invocacion a los metodos remotos
             objrem.Saludo("hola mundo desde la FCC");
         }
