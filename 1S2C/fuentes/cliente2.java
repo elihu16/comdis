@@ -5,9 +5,9 @@ public class cliente2{
         try{
             System.setProperty("java.security.policy","rmi.policy");
             System.setSecurityManager(new SecurityManager());
-            /*iobjetoremoto objrem = (iobjetoremoto) Naming.lookup("rmi://"+args[0]+":2320/SistemasDistribuidos");*/
+            iobjetoremoto objrem = (iobjetoremoto) Naming.lookup("rmi://"+args[0]+":2320/SistemasDistribuidos");
             
-            iobjetoremoto objrem = (iobjetoremoto) Naming.lookup("rmi://localhost:2320/SistemasDistribuidos");
+            //iobjetoremoto objrem = (iobjetoremoto) Naming.lookup("rmi://localhost:2320/SistemasDistribuidos");
             
             
             //invocacion a los metodos remotos
