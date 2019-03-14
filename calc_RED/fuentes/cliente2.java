@@ -7,18 +7,31 @@ public class cliente2{
             System.setSecurityManager(new SecurityManager());
             iobjetoremoto objrem = (iobjetoremoto) Naming.lookup("rmi://"+args[0]+":2320/SistemasDistribuidos");
             
-            //invocacion a los metodos remotos
-            /*java.util.Scanner lectura = new Scanner(System.in);
-            String cadena;
+            Scanner numero = new Scanner(System.in);
+            float a;
+            float b;
+            int opc;
 
-            System.out.print("Escribe el mensaje C1: ");
-            cadena = lectura.nextLine();
-            objrem.Saludo(cadena);*/
-            ////
-            float a=5;
-            float b=5;
-            System.out.print("resta: "+ objrem.resta(a, b));
-        }
+            do {
+                System.out.println("Calculadora Cliente 2");
+                System.out.println("ingrese el primer numero: ");
+                a = numero.nextInt();
+                b = numero.nextInt();
+
+                System.out.println("OPERACIONES\n");
+                System.out.println("1-RESTA");
+                System.out.println("2-MULTIPLICACION");
+                System.out.println("5-SALIR");
+                System.out.print("ingresa tu opcion");
+                opc = numero.nextInt();
+                switch(opc){
+                    case 1:
+                        System.out.print("La Resta: "+ objrem.resta(a, b));
+                    case 2:
+                        System.out.print("La Multiplicacion: "+ objrem.mult(a, b));
+                }
+            }while (opc != 5);//FIN DOO
+        }//try
         catch(Exception e){e.printStackTrace();}
     }//fin del main
 }//fin de la clase cliente
