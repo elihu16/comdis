@@ -1,0 +1,13 @@
+Proyecto Final
+el cajero con BD en archivo que se puedan crear N cuentas 
+
+1 servidor.class
+1 cliente.class (que se pueda copiar a varias maquinas)
+primero hacer el programa  en puro texto y despues grafico
+
+cc02-201
+dias de resureccion jueves 2 y vienes 3 maio
+
+manual de usr y codigo comentado
+
+primero hacer el programa  en puro texto y despues grafico
