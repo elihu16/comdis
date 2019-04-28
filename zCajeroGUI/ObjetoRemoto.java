@@ -17,7 +17,8 @@ public class ObjetoRemoto extends UnicastRemoteObject implements IObjetoRemoto
     private void GenerarSaldo()
     {
     	String s1, s2;
-    	try{
+    	try
+    	{
     	    FileReader fr = new FileReader("datos.txt");
     	    BufferedReader br = new BufferedReader(fr);
     	    
@@ -27,7 +28,8 @@ public class ObjetoRemoto extends UnicastRemoteObject implements IObjetoRemoto
     	    saldo2 = Double.parseDouble(s2);
     	    br.close();
     	}
-    	catch(Exception e){
+    	catch(Exception e)
+	{
     	    System.out.println("Error");
     	}
     } // Fin GenerarSaldo
@@ -52,6 +54,7 @@ public class ObjetoRemoto extends UnicastRemoteObject implements IObjetoRemoto
     	 }
     } // Fin ModificarSaldo
 
+    
     public double DevolverSaldo(int ncliente) throws RemoteException
     {
         double saldo = -1;

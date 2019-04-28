@@ -13,12 +13,14 @@ public class Cliente
             
             // Invocación a los métodos remotos
             Scanner lectura = new Scanner(System.in);
-            Scanner leer = new Scanner(System.in);
+
             int cliente, opc;
             double saldo,saldodis;
+
             System.out.println("Cajero Automatico Elihu\n");
             System.out.print("Dame el numero de cliente");
             cliente = lectura.nextInt();
+            
             if ((cliente == 1) || (cliente == 2))
             {
                 do {
